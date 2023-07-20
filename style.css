@@ -1,0 +1,277 @@
+body{
+    background-color: hsl(210, 46%, 95%) ;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 600px;
+}
+
+.drawer-image{
+    width: 250px;
+    height: 225px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.other-half{
+    width: 350px;
+    height: 225px;
+    padding: 30px 30px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1{
+    font-size: 1em;
+    font-weight: 700;
+    color:hsl(217, 19%, 35%);
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+.first-text{
+    font-size: 0.65em;
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 20px
+}
+
+.halfOfhalf-desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 15px;
+}
+
+h2{
+    font-size: 0.6em;
+    line-height: 0.2em;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    padding-top: 5px;
+}
+
+.date-text{
+    font-size: 0.55em;
+    color: hsl(214, 17%, 51%);
+}
+
+.btn-desktop{
+   background-color: hsl(210, 46%, 95%);
+   border: none;
+   border-radius: 50%;
+   align-items: center;
+   padding: 0px 8px;
+}
+.btn-desktop:hover{
+   background-color: hsl(214, 17%, 51%);
+   color: white;
+}
+.btn-desktop:hover i{
+    color: white;
+}
+.fa-share{
+    color:  hsl(214, 17%, 51%);
+}
+
+.popover{
+    background-color: hsl(217, 19%, 35%);
+    width: 180px;
+    height: 40px;
+}
+.popover .popover-arrow::after{
+    border-top-color: hsl(217, 19%, 35%) !important;
+}
+
+.share-text{
+    color: hsl(212, 23%, 69%);
+    font-size: 0.7em;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 3px;
+    text-align: start;
+    padding-right: 3px;
+}
+
+.popover-body{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 22px;
+}
+
+.share-text{
+    padding-bottom: 10px;
+}
+.social-icon{
+    margin-left: 7px;
+}
+.social-icon img{
+    width: 15px;
+    margin-bottom: 5px;
+}
+
+.halfOfhalf-mobile{
+    display:none;
+}
+.button-text{
+    display: none;
+}
+.btn-mobileB{
+    display: none;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width :1250px){
+    .container{
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+    }
+    .drawer-image{
+        width: 270px;
+        height: 180px;
+        margin-top: 75px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .other-half{
+        width: 270px;
+        height: 260px;
+        margin-bottom: 40px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+    }
+    h1{
+        font-size: 0.8em;
+        margin-top: 5px;
+        line-height: 1.5em;
+    }
+    .first-text{
+        font-size: 0.667em;
+        margin-top: 10px;
+        line-height: 1.5em;
+    }
+    .avatar{
+        width: 30px;
+        margin-right: 15px;
+    }
+    
+    h2{
+        font-size: 0.6em;
+        line-height: 0.5em;
+    }
+    .date-text{
+        font-size: 0.5em;
+       
+    }
+    .share-icon{
+        width: 30px;
+        padding: 8px;
+    }
+    
+    .btn{
+        font-size: 16px;
+    }
+    
+    .attribution{
+        margin-bottom: none;
+        
+    }
+    .halfOfhalf-desktop{
+        display: none;
+    }
+    .halfOfhalf-mobile{
+        display: initial;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px    
+    }
+    .profile{
+       display: flex;
+       align-items: center;
+    }
+
+    .btn-mobileA{
+        background-color: hsl(210, 46%, 95%);
+        border: none;
+        border-radius: 50%;
+        align-items: center;
+        padding: 2px 8px;
+     }
+     .btn-mobileA:hover{
+        background-color: hsl(214, 17%, 51%);
+        color: white;
+     }
+     .btn-mobileA:hover i{
+         color: white;
+     }
+     .button-text{
+        display: none;
+        background-color: hsl(217, 19%, 35%);
+        position: absolute;
+        width: 270px;
+        height: 50px;
+        right: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 12px 30px;
+     }
+     .final-lap{
+        display: flex;
+        justify-content: space-between;
+     }
+     .lastone{
+        padding-left: 10px;
+        font-size: 0.5em;
+     }
+     .social-icon2{
+        margin-left: 8px;
+    }
+    .social-icon2 img{
+        width: 15px;
+    }
+    
+     .share-textB{
+        font-size: 0.7em;
+        padding-bottom: 10px;
+     }
+     .btn-mobileB{
+        background-color: hsl(214, 17%, 51%);
+        border: none;
+        border-radius: 50%;
+        align-items: center;
+        padding: 0px 6px;
+        
+     }
+     .btn-mobileB i{
+        color: white;
+    }
+     .btn-mobileB:hover{
+        background-color: hsl(214, 17%, 51%);
+        color: white;
+     }
+     .btn-mobileB:hover i{
+         color: white;
+     }
+}
